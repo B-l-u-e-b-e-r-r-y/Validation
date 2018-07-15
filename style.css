@@ -1,0 +1,308 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", 微軟正黑體;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0px auto;
+  padding: 0px;
+  text-align: center;
+}
+
+h1, h2, p {
+  margin: 0px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-top: 50px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 400;
+  font-style: Italic;
+  color: #0275D8;
+}
+
+p {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+input {
+  border: solid 2px;
+  border-radius: 8px;
+  font-size: 20px;
+  height: 52px;
+  padding: 12px 20px;
+  margin-bottom: 30px;
+}
+
+.submit {
+  background-color: #BEE1FF;
+  border: none;
+  color: white;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.submit_s {
+  background-color: #0275D8;
+  cursor: pointer;
+}
+
+.step {
+  font-size: initial;
+  position: relative;
+  width: 300px;
+  margin: 0 auto;
+}
+.step .line_f {
+  display: inline-block;
+  width: 0px;
+  border: solid 1px #0275D8;
+}
+.step .line {
+  display: inline-block;
+  width: 234px;
+  border: solid 1px #BEE1FF;
+}
+.step .line i {
+  position: absolute;
+  display: inline-block;
+  font-size: 16px;
+  top: 9px;
+  left: 20px;
+  color: #0275D8;
+  background-color: white;
+}
+.step .line .c2 {
+  color: #BEE1FF;
+  left: 100px;
+}
+.step .line .c3 {
+  color: #BEE1FF;
+  left: 180px;
+}
+.step .line .c4 {
+  color: #BEE1FF;
+  left: 260px;
+}
+
+.datav {
+  position: relative;
+  width: auto;
+  margin: 0 auto;
+  font-size: 0px;
+}
+.datav .top {
+  margin: 0 auto;
+  width: 456px;
+  border: solid 3px #0275D8;
+  margin-bottom: 40px;
+}
+.datav .screen {
+  display: inline-block;
+  width: 500px;
+  height: 750px;
+  overflow: hidden;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.datav .screen .CreateAccount, .datav .screen .Infomation, .datav .screen .UpdatePic, .datav .screen .PayMethod, .datav .screen .Final {
+  width: 500px;
+  height: 750px;
+  display: inline-block;
+  vertical-align: top;
+}
+.datav .screen .page {
+  position: relative;
+  left: 0;
+  white-space: normal;
+  transition: 0.3s;
+}
+.datav .screen .CreateAccount .input_area {
+  text-align: center;
+  margin: 0 auto;
+  width: 460px;
+}
+.datav .screen .CreateAccount .input_area p {
+  text-align: left;
+}
+.datav .screen .CreateAccount .input_area input {
+  width: 460px;
+}
+.datav .screen .Infomation .step .line_f {
+  width: 80px;
+}
+.datav .screen .Infomation .step .line {
+  width: 170px;
+}
+.datav .screen .Infomation .step .line .c2 {
+  color: #0275D8;
+}
+.datav .screen .Infomation .input_area p {
+  margin: 0px 10px;
+  display: inline-block;
+}
+.datav .screen .Infomation .input_area p label {
+  font-size: 16px;
+  font-weight: 300;
+}
+.datav .screen .Infomation .input_area input {
+  display: inline-block;
+  margin: 10px 10px;
+}
+.datav .screen .Infomation .input_area .b1, .datav .screen .Infomation .input_area .b2, .datav .screen .Infomation .input_area .b3, .datav .screen .Infomation .input_area .b4, .datav .screen .Infomation .input_area .b5 {
+  text-align: left;
+  display: inline-block;
+}
+.datav .screen .Infomation .input_area .b1, .datav .screen .Infomation .input_area .b2 {
+  margin: 0px;
+}
+.datav .screen .Infomation .input_area .b1 input, .datav .screen .Infomation .input_area .b2 input {
+  width: 220px;
+}
+.datav .screen .Infomation .input_area .b3 {
+  margin-top: 20px;
+}
+.datav .screen .Infomation .input_area .b3 input {
+  width: 460px;
+}
+.datav .screen .Infomation .input_area .b4, .datav .screen .Infomation .input_area .b5 {
+  margin: 20px 0px 0px 0px;
+}
+.datav .screen .Infomation .input_area .b4 input, .datav .screen .Infomation .input_area .b5 input {
+  width: 220px;
+}
+.datav .screen .Infomation .input_area .b6 {
+  margin: 10px 0px 0px 0px;
+}
+.datav .screen .Infomation .input_area .b6 input {
+  width: 460px;
+}
+.datav .screen .Infomation .input_area input[type="submit"] {
+  margin-top: 30px;
+  width: 460px;
+}
+.datav .screen .UpdatePic {
+  position: relative;
+}
+.datav .screen .UpdatePic .step .line_f {
+  width: 150px;
+}
+.datav .screen .UpdatePic .step .line {
+  width: 80px;
+}
+.datav .screen .UpdatePic .step .line .c2, .datav .screen .UpdatePic .step .line .c3 {
+  color: #0275D8;
+}
+.datav .screen .UpdatePic .update_area {
+  margin: 0 auto;
+  left: 50%;
+  width: 460px;
+  height: 140px;
+  font-size: 0px;
+  border: solid 2px black;
+  border-radius: 8px;
+  color: #9B9B9B;
+  cursor: pointer;
+}
+.datav .screen .UpdatePic .update_area i {
+  line-height: 140px;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: right;
+  width: 30%;
+  font-size: 58px;
+}
+.datav .screen .UpdatePic .update_area .text {
+  vertical-align: middle;
+  display: inline-block;
+  text-align: left;
+  width: 70%;
+  font-size: 20px;
+  padding: 0px 20px;
+}
+.datav .screen .UpdatePic .update_area .text span {
+  font-size: 16px;
+}
+.datav .screen .UpdatePic input[type="submit"] {
+  margin-top: 40px;
+  width: 460px;
+}
+.datav .screen .PayMethod .step .line_f {
+  width: 235px;
+}
+.datav .screen .PayMethod .step .line {
+  width: 0px;
+}
+.datav .screen .PayMethod .step .line .c2, .datav .screen .PayMethod .step .line .c3, .datav .screen .PayMethod .step .line .c4 {
+  color: #0275D8;
+}
+.datav .screen .PayMethod .input_area {
+  margin: 0 auto;
+  font-size: 0px;
+}
+.datav .screen .PayMethod .input_area p {
+  margin: 0px;
+}
+.datav .screen .PayMethod .input_area input {
+  display: inline-block;
+  margin: 10px 0px;
+  width: 100%;
+}
+.datav .screen .PayMethod .input_area .b1, .datav .screen .PayMethod .input_area .b2, .datav .screen .PayMethod .input_area .b3, .datav .screen .PayMethod .input_area .b4, .datav .screen .PayMethod .input_area .b5 {
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+  margin: 10px 0px;
+}
+.datav .screen .PayMethod .input_area .b1 input {
+  width: 460px;
+}
+.datav .screen .PayMethod .input_area .b2 input {
+  width: 220px;
+}
+.datav .screen .PayMethod .input_area .b3 input {
+  width: 220px;
+}
+.datav .screen .PayMethod .input_area .b4 input {
+  width: 140px;
+}
+.datav .screen .PayMethod .input_area .b5 input {
+  width: 300px;
+}
+.datav .screen .PayMethod .input_area input[type="submit"] {
+  margin-top: 20px;
+  width: 460px;
+}
+.datav .screen .Final .submit {
+  background: none;
+  width: 100%;
+  height: 100%;
+}
+.datav .screen .Final .step .line_f {
+  width: 235px;
+}
+.datav .screen .Final .step .line {
+  width: 0px;
+}
+.datav .screen .Final .step .line .c2, .datav .screen .Final .step .line .c3, .datav .screen .Final .step .line .c4 {
+  color: #0275D8;
+}
+.datav .screen .Final .fa-smile {
+  font-size: 230px;
+  color: #BEE1FF;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Validation - 資料驗證</title>
+	<link rel="Shortcut Icon" type="image/x-icon" href="logo.png">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+<div class="datav">
+  <div class="top"></div>
+  <div class="screen">
+    <div class="page CreateAccount">
+      <div class="step">
+        <div class="line"><i class="far fa-dot-circle"></i><i class="far fa-circle c2"></i><i class="far fa-circle c3"></i><i class="far fa-circle c4"></i></div>
+      </div>
+      <h1>Create Account</h1>
+      <h2>Glad to see you here!</h2>
+      <div class="input_area">
+        <p>Account</p>
+        <input v-model="email" placeholder="example@email.com"/>
+        <p>Password</p>
+        <input placeholder="•••••••"/>
+        <p>Comfirm Password</p>
+        <input placeholder="•••••••"/><br/>
+        <input class="submit" type="submit" value="SUBMIT &amp; NEXT"/>
+      </div>
+    </div>
+    <div class="page Infomation">
+      <div class="step">
+        <div class="line_f"></div>
+        <div class="line"><i class="fas fa-check-circle"></i><i class="far fa-dot-circle c2"></i><i class="far fa-circle c3"></i><i class="far fa-circle c4"></i></div>
+      </div>
+      <h1>General Infomation</h1>
+      <h2>Tell us who you are!</h2>
+      <div class="input_area">
+        <div class="b1">
+          <p>Name
+            <label>(optional)</label>
+          </p><br/>
+          <input placeholder="Example Name"/>
+        </div>
+        <div class="b2">
+          <p>Phone*</p><br/>
+          <input placeholder="0912 345 678"/>
+        </div><br/>
+        <div class="b3">
+          <p>Birth Date
+            <label>(optional)</label>
+          </p><br/>
+          <input type="date"/>
+        </div><br/>
+        <div class="b4">
+          <p>Address*</p><br/>
+          <input placeholder="City"/>
+        </div>
+        <div class="b5">
+          <input placeholder="Dist"/>
+        </div>
+        <div class="b6">
+          <input placeholder="Address Detail"/>
+        </div>
+        <input class="submit" type="submit" value="SUBMIT &amp; NEXT"/>
+      </div>
+    </div>
+    <div class="page UpdatePic">
+      <div class="step">
+        <div class="line_f"></div>
+        <div class="line"><i class="fas fa-check-circle"></i><i class="fas fa-check-circle c2"></i><i class="far fa-dot-circle c3"></i><i class="far fa-circle c4"></i></div>
+      </div>
+      <h1>Update Profile Picture</h1>
+      <h2>We wanna know you more!</h2>
+      <div class="update_area"><i class="fas fa-images"></i>
+        <div class="text">UPLOAD UP TO 3 PHOTOS<br/><span>MAX SIZE: 150*150px</span></div>
+      </div>
+      <input class="submit" type="submit" value="SUBMIT &amp; NEXT"/>
+    </div>
+    <div class="page PayMethod">
+      <div class="step">
+        <div class="line_f"></div>
+        <div class="line"><i class="fas fa-check-circle"></i><i class="fas fa-check-circle c2"></i><i class="fas fa-check-circle c3"></i><i class="far fa-dot-circle c4"></i></div>
+      </div>
+      <h1>Payment Method</h1>
+      <h2>Add your credit card infomation!</h2>
+      <div class="input_area">
+        <div class="b1">
+          <p>Card Number</p>
+          <input placeholder="1234 5678 9012 3456"/>
+        </div><br/>
+        <div class="b2">
+          <p>Cardholder Name</p>
+          <input placeholder="EXAMPLE NAME"/>
+        </div>
+        <div class="b3">
+          <p>Bank Name</p>
+          <input placeholder="EXAMPLE BANK"/>
+        </div><br/>
+        <div class="b4">
+          <p>CVV</p>
+          <input placeholder="123"/>
+        </div>
+        <div class="b5">
+          <p>Expire Date</p>
+          <input type="date"/>
+        </div><br/>
+        <input class="submit" type="submit" value="DONE"/>
+      </div>
+    </div>
+    <div class="page Final">
+      <div class="step">
+        <div class="line_f"></div>
+        <div class="line"><i class="fas fa-check-circle"></i><i class="fas fa-check-circle c2"></i><i class="fas fa-check-circle c3"></i><i class="fas fa-check-circle c4"></i></div>
+      </div>
+      <h1>Congratulations</h1>
+      <h2>Now you’re one of us!</h2><i class="fas fa-smile"></i>
+      <h3>Redirected to homepage after 5 seconds…</h3>
+      <div class="submit"></div>
+    </div>
+  </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+<script>
+	var page = 0;
+	$(".submit").click(
+	 	function(){
+		    page++;
+		    if(page > 4)
+		    	page = 0;
+		    $(".page").css("left","-" + page*100 +"%");
+		}
+	);
+</script>
+</body>
+</html>
